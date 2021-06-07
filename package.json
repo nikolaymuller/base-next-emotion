@@ -1,0 +1,58 @@
+{
+  "name": "starter-next-emotion",
+  "version": "0.1.0",
+  "description": "Starter template with next and emotion",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "prettier": "prettier --write '*/**/*.{js,ts,tsx,json,md}'",
+    "lint:eslint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "lint:stylelint": "stylelint '**/*.{css,tsx}'",
+    "lint": "yarn lint:eslint && yarn lint:stylelint"
+  },
+  "prettier": "@mullerstd/eslint-config/prettier",
+  "eslintConfig": {
+    "extends": "@mullerstd/eslint-config"
+  },
+  "stylelint": {
+    "extends": [
+      "@mullerstd/stylelint-config"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.1.3",
+    "@emotion/react": "^11.1.5",
+    "@yarnpkg/pnpify": "^3.0.0-rc.3",
+    "next": "^10.1.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^12.1.1",
+    "@emotion/babel-plugin": "^11.3.0",
+    "@mullerstd/eslint-config": "^1.3.0",
+    "@mullerstd/stylelint-config": "^1.0.5",
+    "@mullerstd/tsconfig": "^1.0.0",
+    "@types/eslint": "^7.2.10",
+    "@types/node": "^15.0.1",
+    "@types/prettier": "^2.2.3",
+    "@types/react": "^17.0.4",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "commitlint": "^12.1.1",
+    "eslint": "^7.25.0",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^6.0.0",
+    "prettier": "^2.2.1",
+    "stylelint": "^13.13.0",
+    "typescript": "^4.2.4"
+  }
+}

@@ -1,0 +1,35 @@
+# dependencies
+node_modules
+
+# yarn
+.yarn/*
+!.yarn/cache
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# testing
+coverage
+
+# cache
+.eslintcache
+
+# builds
+build
+
+# next js
+.next
+out
+
+# misc
+.DS_Store
+
+# envs
+.env*
+
+# logs
+*.log
+
+# vercel
+.vercel
